@@ -14,6 +14,7 @@ enrollments_filename = '../datasets/ud170/enrollments.csv'
 with open(enrollments_filename, 'rb') as f:
     reader = unicodecsv.DictReader(f)
     enrollments = list(reader)
+print enrollments
 
 ### Write code similar to the above to load the engagement
 ### and submission data. The data is stored in files with
